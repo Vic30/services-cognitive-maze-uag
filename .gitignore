@@ -1,0 +1,15 @@
+.jazz5
+.metadata
+.jazzShed
+.idea
+.tern-project
+.DS_Store
+.factorypath
+/bin/
+node_modules
+coverage
+.scannerwork
+package-lock.json
+selenium-debug.log
+reports/
+.npmrc

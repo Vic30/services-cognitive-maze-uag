@@ -1,0 +1,15 @@
+{
+  "name": "cognitivo",
+  "version": "1.0.0",
+  "description": "proyecto sockets unity",
+  "main": "chatServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "victor Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "input-event": "^1.2.5",
+    "tty": "^1.0.1"
+  }
+}
