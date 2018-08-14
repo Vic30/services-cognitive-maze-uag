@@ -1,7 +1,7 @@
-//const readline = require('readline');
+const readline = require('readline');
 net = require('net');
-//readline.emitKeypressEvents(process.stdin);
-//process.stdin.setRawMode(true);
+readline.emitKeypressEvents(process.stdin);
+process.stdin.setRawMode(true);
 
 var client;
 
@@ -14,7 +14,7 @@ net.createServer(function (socket) {
 
     client.on('data', function (data) {
         console.log("Data:");
-        console.log(data);
+        console.log(data.toString('utf8'));
     });
     client.on('end', function () {
         throw new Error("[-] Unity client disconnected");
