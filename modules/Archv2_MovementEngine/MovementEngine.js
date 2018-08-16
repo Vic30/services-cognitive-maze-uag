@@ -5,28 +5,28 @@ function performDesicion(desicion, socket){
     client = socket;
     switch(dictionary.direction_dictionary[desicion]) {
         case "left":
-            setTimeout(walkInLeft,500);
+            /*setTimeout(walkInLeft,500);
             setTimeout(walkInLeft,1000);
-            setTimeout(walkInLeft,1500);
-
+            setTimeout(walkInLeft,1500);*/
+            walkInLeft();
             break;
         case "right":
-            setTimeout(walkInRight,500);
+            /*setTimeout(walkInRight,500);
             setTimeout(walkInRight,1000);
-            setTimeout(walkInRight,1500);
-
+            setTimeout(walkInRight,1500);*/
+            walkInRight();
             break;
         case "back":
-            setTimeout(walkInBack,500);
+            /*setTimeout(walkInBack,500);
             setTimeout(walkInBack,1000);
-            setTimeout(walkInBack,1500);
-
+            setTimeout(walkInBack,1500);*/
+            walkInBack();
             break;
         case "front":
-            setTimeout(walkInFront,500);
+            /*setTimeout(walkInFront,500);
             setTimeout(walkInFront,1000);
-            setTimeout(walkInFront,1500);
-
+            setTimeout(walkInFront,1500);*/
+            walkInFront();
             break;
     }
 }
