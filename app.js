@@ -20,10 +20,10 @@ net.createServer(function (socket) {
         var dataString = data.toString('utf8');
 
         //Parse data from unity to direction dictonary
-        var left = (dataString.indexOf(dictionary.direction_dictionary[0])> -1);
-        var right = (dataString.indexOf(dictionary.direction_dictionary[1]) > -1);
-        var back = (dataString.indexOf(dictionary.direction_dictionary[2]) > -1);
-        var front = (dataString.indexOf(dictionary.direction_dictionary[3]) > -1);
+        var front = (dataString.indexOf(dictionary.direction_dictionary[0]) == -1);
+        var right = (dataString.indexOf(dictionary.direction_dictionary[1]) == -1);
+        var back = (dataString.indexOf(dictionary.direction_dictionary[2]) == -1);
+        var left = (dataString.indexOf(dictionary.direction_dictionary[3]) == -1);
 
         console.log("Left: "+ left );
         console.log("Right: "+ right );
@@ -42,7 +42,7 @@ net.createServer(function (socket) {
         if (key.ctrl && key.name === 'c') {
         process.exit();
     }
-    if (key.name === 'up' || key.name === 'down' || key.name === 'right' || key.name === 'left') {
+    if (key.name === 'up' || key.name === 'back' || key.name === 'right' || key.name === 'left') {
         console.log(key.name);
         client.write(key.name+"\n");
     }

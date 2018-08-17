@@ -1,4 +1,4 @@
-var direction_dictionary = ["left","right","back","front"];
+var direction_dictionary = ["front","right","back","left"];
 
 module.exports = {
     direction_dictionary
